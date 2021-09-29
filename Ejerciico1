@@ -29,37 +29,47 @@
 		}
         */
 
-        /*Ejercicio1*/
+       td[colspan="2"], td[rowspan="2"]{
+	background-color: #234E54;
+}
 
-        td[colspan="2"]{
-			background-color: green;
+td[colspan="3"], td[rowspan="3"] {
+	background-color: #ACA759;
+}
 
-        }
-		td[rowspan="2"]{
-			background-color: green;
+td[rowspan="4"], td[colspan="4"] {
+	background-color: #CEA885;
+}
 
-        }
+/* li[id^="pregunta"], li[id*="pregunta"] y li[id] son selectores que hacen referencia a lo mismo. Se emplean para poner en práctica los diferentes tipos de selectores */
 
-
-		td[colspan="4"]{
-			background-color: brown;
-		}
-
-		td[rowspan="4"]{
-			background-color: brown;
-		}
-
-		td[colspan="3"]{
-			background-color: yellow;
-		}
-		td[rowspan="3"]{
-			background-color: yellow;
-		}
-        /*Ejercicio2*/
-        li[id]{
-            color: violet;
-        }
-
+li[id^="pregunta"] {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 0.85em;
+	list-style-type: square;
+	color: #A300CC;
+}
+span.negrita{
+	font-weight: bold;
+}
+li[id*="pregunta"] span.negrita {			
+	background-color: #FF9;
+}
+.comentarios {
+	font-style: italic;
+	margin-left: 10%;
+	border: thin dotted #AC8159;
+	margin-right: 10%;
+}
+.sin_recuadro + p {
+	text-decoration: underline;
+}
+li[id]>a {
+	background-color: #755E8B;
+}
+span.cursiva{
+	font-style: italic;
+}
 	</style>
 </head>
 
