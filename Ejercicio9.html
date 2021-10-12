@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Falta por hacer-->
+        <style>
+            
+            #cajaPrincipal{
+                border:solid black 2px;
+                border-collapse: none;
+                padding: 2px;
+                position: center center;
+            }
+            .primeraFila  div{
+                margin: 2px;
+                padding-bottom: 100px;
+                border:solid black 2px;
+                width: 32.5%;
+                display: inline-block;
+            }
+            .segundaFila div {
+                margin: 2px;
+                border:solid black 2px;
+                width: 32.5%;              
+                display: inline-block;
+                padding-bottom: 100px;
+                background-color: green;
+            }
+            .terceraFila div {
+                background-color: blue;
+                margin: 2px;
+                border:solid black 2px;
+                width: 32.5%;
+                display: inline-block;
+                padding-bottom: 100px;
+            }
+
+            .segundaFila div:nth-child(odd){
+                visibility: hidden;
+                display: none;
+                clear:right;
+            }
+            .primeraFila div:nth-child(even){
+                visibility: hidden;
+                
+                
+            }
+            .terceraFila div:nth-last-child(even){
+                visibility: hidden;
+                display:none;
+            }
+            
+
+
+        </style>
+    </head>
+    <body>
+        <div id="cajaPrincipal">
+            <div  class="primeraFila">
+                <div >caja1</div>
+                <div  >caja2</div>
+                <div  >caja3</div>
+            </div>
+
+       
+            <div class="segundaFila">
+                <div >caja4</div>
+                <div >caja5</div>
+                <div >caja6</div>
+            </div>
+        
+
+       
+            <div class="terceraFila">
+                <div >caja7</div>
+                <div >caja8</div>
+                <div >caja9</div>
+            </div>
+        </div>
+
+
+    </body>
+</html>

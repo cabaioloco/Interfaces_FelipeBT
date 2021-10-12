@@ -1,0 +1,76 @@
+:root{
+	--ancho: 300px;
+	--espacio: 10px;
+}
+
+#estatico{
+	position: static;
+	background-color:#606;
+	color: #ffc;
+	padding: var(--espacio);
+	text-align: center;
+	width: var(--ancho);
+    /*entiendo que el valor por defecto del z-index del estatico es 0 ,por ello debemos poner el
+    z index de los otros dos(absoluto1 y relativo) mas bajo que cero para que el estatico se pueda ver por 
+    encima de los dos*/
+}
+
+#absoluto1{
+	position: absolute;
+	width: var(--ancho); 
+	padding: var(--espacio); 
+	background-color: #066; 
+	text-align: right; 
+	color: #ffc; 
+	top: 100px; 
+	left: 300px;
+    z-index: -1;
+}
+
+#relativo{
+    z-index: -2;
+	position: relative; 
+	width: var(--ancho); 
+	padding: var(--espacio); 
+	background-color: #033; 
+	color: #ffc; 
+	top: 0px; 
+	left: 30px;
+    
+}
+
+#fijo{
+	position: fixed; 
+	width: var(--ancho); 
+	padding: var(--espacio); 
+	background-color: #096; 
+	color: #ffc; 
+	top: 10px; 
+	left: 30px;
+}
+
+#relativo2{ /*Falta posicionamiento */
+    position: relative;
+	width: 360px; 
+	height: 100px; 
+	padding: var(--espacio); 
+	background-color: #666; 
+	text-align: right; 
+	color: #ffc; 
+    /*-------------*/
+    top: 10rem;
+    left: 6rem;
+	
+}
+
+#relativo2 div{ /*Falta posicionamiento */
+    position: relative;
+	width: var(--ancho); 
+	padding: var(--espacio); 
+	background-color: #111; 
+	text-align: right; 
+	color: #ffc; 
+     /*-------------*/
+     top: 20px;
+     left: 20px;
+}
