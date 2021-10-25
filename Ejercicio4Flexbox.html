@@ -1,0 +1,119 @@
+<html>
+    <head>
+        <style>
+           #contenedorPrincipal{
+               border: 1px solid cyan;
+                width: 40rem;
+                height:5rem;
+                background-color:grey;
+                display: flex;
+                flex-direction: row;
+                justify-content:space-around;
+                align-items: flex-end;  
+           }
+           
+            #contenedorPrincipal > div{
+                width: 6rem;
+                height: 2rem;
+                background-color: orange; 
+                display: flex;
+                align-items: center;
+               justify-content: center;
+            }
+
+            #contenedorPrincipal1 > div{
+                width: 6rem;
+                height: 2rem;
+                background-color: orange; 
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+            }
+            #contenedorPrincipal1{
+                border: 1px solid cyan;
+                width: 40rem;
+                height:5rem;
+                background-color: grey;
+                display: flex;
+                flex-direction: row;
+                justify-content:space-around;
+                align-items: flex-start;
+                
+           }
+           #contenedorPrincipal2{
+                border: 1px solid cyan;
+                width: 40rem;
+                height:5rem;
+                background-color:grey;
+
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                justify-content: baseline;
+                align-items: center;
+                 
+           }
+           #contenedorPrincipal2 > div{
+    
+                background-color: orange; 
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+          #solo{
+              align-self: flex-start;
+          }
+          #solo3{
+              align-self: center;
+          }
+          #solo1{
+              height: 2rem;
+              width: 6rem;
+          }
+          #solo2{
+              height: 1.4rem;
+              width: 6rem;
+          }
+          #solo4{
+              height: 4rem;
+              width: 6rem;
+          }
+          #solo13{
+            height: 2rem;
+              width: 6rem;
+          }
+          #solo5{
+              height: 1rem;
+              width: 9rem;
+          }
+
+
+        </style>
+    </head>
+    <body>
+        <div id="contenedorPrincipal">
+                <div>1</div>
+                <div>2</div>
+                <div id="solo">3</div>
+                <div>4</div>
+                <div>5</div>
+        </div>
+        <div id="contenedorPrincipal1">
+            <div>1</div>
+            <div>2</div>
+            <div id="solo3">3</div>
+            <div>4</div>
+            <div>5</div>
+    </div>
+    <div id="contenedorPrincipal2">
+        <div id="solo1">1</div>
+        <div id="solo2">2</div>
+        <div id="solo13">3</div>
+        <div id="solo4">4</div>
+        <div id="solo5">5</div>
+</div>
+    </body>
+</html>
