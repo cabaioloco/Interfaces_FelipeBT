@@ -1,0 +1,183 @@
+<html>
+    <head>
+        <style>
+            body{
+                margin: 0;
+            }
+           header {
+                background-color: darkblue;
+                color: white;
+                width: 100%;
+                height: 10%;
+                display:flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+            }
+            footer{
+                background-color: darkblue;
+                color: white;
+                width: 100%;
+                height: 10%;
+                display:flex;
+                justify-content:space-between;
+            }
+            #cuerpo{
+                display: flex;
+                justify-content: flex-start;
+                width: 100%;
+                height: 80%;  
+            }
+            #columna{
+                background-color: orange;
+                height: 100%;
+                flex-basis: 34%;
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+               
+            
+            }
+            
+            footer > div{
+                margin-left: 10px;
+                display: flex;
+                align-items: center;
+            }
+           
+            .borde{
+                border-bottom: 1px solid black;
+                height: 70%;
+                gap: 10px;
+            }
+
+            #cuerpo div{
+                height: 100%;
+                width: 33%;
+                display: flex;
+            }
+            header #principio {
+                margin-right: 10px;
+                display: flex;
+                align-items: center;
+                
+            }
+            #titulo{
+                flex-grow: 1;
+                margin-left: 10px;
+            }
+         
+            #columna #arriba{
+                width: 600px;
+                height: 200px;
+                background-color: chocolate;
+                flex-wrap: wrap;
+                margin-left: 20px;
+            }
+            #columna #arriba div{
+                width: 50%;
+                height: 50%;
+            }
+            #columna #abajo{
+                width: 600px;
+                height: 200px;
+                background-color: chocolate;
+                flex-wrap: wrap;
+                margin-left: 20px;
+                
+            }
+            #columna #abajo div{
+                width: 50%;
+                height: 50%;
+            }
+          
+            .rojo{
+                background-color: red;
+            }
+            .boton{
+                background-color: red;
+                height: 2rem;
+                width:5rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .botonNaranja{
+                background-color:orange;
+                height: 2rem;
+                width:5rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .linea{
+                border: 1px solid black;
+                height: 0px;
+                width: 20px;
+            }
+            .texto{
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+            }
+            #caja{
+                margin-right: 20px;
+            }
+         
+         
+        </style>
+    </head>
+    <body>
+        <header >
+            <div id="titulo">FalcomMasters</div>
+            <div id="principio">
+                <div class="boton">Inicio</div>
+                <div class="boton">Blog</div>
+                <div class="boton">Proyecto</div>
+                <div class="boton" >Contacto</div>
+            </div>
+        </header>
+        <div id="cuerpo">
+            <div class="texto">
+                <h1>Lorem ipsum dolor sit ament.</h1>
+               <div> ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porttitor ullamcorper dui, et tempus risus ultricies ut. Morbi rutrum, erat vel dapibus maximus, ante mauris consectetur ante, quis ultrices eros est quis felis. Aliquam et ipsum eu purus mattis mollis. Praesent pulvinar nunc eu velit lacinia hendrerit. Donec ac condimentum lorem, eget tristique nibh. Proin tempor sodales sodales.</div> 
+               
+            </div>
+            <div class="texto" >
+                <h1>Lorem ipsum dolor sit ament.</h1>
+                <div> ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porttitor ullamcorper dui, et tempus risus ultricies ut. Morbi rutrum, erat vel dapibus maximus, ante mauris consectetur ante, quis ultrices eros est quis felis. Aliquam et ipsum eu purus mattis mollis. Praesent pulvinar nunc eu velit lacinia hendrerit. Donec ac condimentum lorem, eget tristique nibh. Proin tempor sodales sodales.</div> 
+
+            </div>
+            <div id="columna">
+                    <div id="arriba">
+                        <div class="rojo">IMGFlex1</div>
+                        <div> </div>
+                        <div></div>
+                        <div class="rojo">IMGFlex2</div>
+                    </div>
+                    <div id="abajo">
+                        <div> </div>
+                        <div class="rojo">IMGFlex3</div>
+                        <div class="rojo">IMGFlex4</div>
+                        <div></div>
+                       
+                    </div>
+            </div>
+
+           
+        </div>
+      
+        <footer>
+            <div>
+                <div class="boton">Inicio</div>
+                <div class="boton">Blog</div>
+                <div class="boton">Proyecto</div>
+                <div class="boton" >Contacto</div>
+            </div>
+            <div id="caja"> 
+                <div class="botonNaranja">FB</div>
+                <div class="botonNaranja" >TW</div>
+            </div>
+        </footer>
+    </body>
+</html>
