@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <style>
+            #contenedor{
+            
+                display:grid;
+                grid-template-columns: repeat(2,1fr 2fr);
+                grid-template-rows: repeat(3,1fr);
+                grid-gap: 5px;
+                height: 25rem;
+                grid-auto-rows: 2fr;
+            }
+            #contenedor div{
+                border: 1px solid black;
+                border-radius: 7px;
+            }
+            #contenedor :nth-child(odd){
+                background-color: grey;
+            }
+            #contenedor :nth-child(even){
+                background-color: yellow;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Dioses Primigenios</h1>
+        <div id="contenedor">
+            <div>1</div>
+            <div>Chtulu</div>
+            <div>2</div>
+            <div>Yog-Sothth</div>
+            <div>3</div>
+            <div>Azathot</div>
+            <div>4</div>
+            <div>Shub-Nigguraht</div>
+            <div>5</div>
+            <div>Nyarlathotep</div>
+            <div>6</div>
+            <div>Ghroth</div>
+            <div>7</div>
+            <div>Tulzscha</div>
+            <div>8</div>
+            <div>Tru'nembra</div>
+            <div>9</div>
+            <div>Ubbo-sthla</div>
+            <div>10</div>
+            <div>Abhoth</div>
+        </div>
+    </body>
+</html>
