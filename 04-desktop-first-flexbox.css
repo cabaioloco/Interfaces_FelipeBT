@@ -35,10 +35,10 @@ div.container aside {
   font-size: 1em;
   box-sizing: border-box;
 }
-@media all and (max-width:1200px) {
+@media screen  and (max-width:1200px) {
   div.container aside{
    width: 30%;
-   height: fit-content;
+   height: 10%;
   
  }
  div.container nav{   
@@ -53,10 +53,10 @@ div.container{
  flex-wrap: wrap;
 }
 }
-@media all and  (max-width:800px){
+@media screen and  (max-width:800px){
   div.container aside{
    width: 30%;
-   height: fit-content;
+   height: 10%;
   
  }
  div.container nav{   
@@ -71,9 +71,10 @@ div.container{
  flex-wrap: wrap;
 }
 }
-@media all and (max-width:600px){
+@media screen  and (max-width:600px){
   div.container aside{
    width: 100%;
+   height: fit-content;
  }
  div.container nav{   width: 100%;
 }
@@ -85,4 +86,5 @@ div.container article{
 
 
 }
+
 
