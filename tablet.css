@@ -119,8 +119,8 @@
     }
     .cuadro{
         border: 2px solid orange;
-        width: 9.375em;
-        height: 9.375em;
+        width: 6em;
+        height: 6em;
     }
     .letraGrande{
         font-size: 1.5em;
