@@ -84,7 +84,7 @@
     /*<!--Parte del medio(cuadrado negro y dentro borde de cuadro naranja)-->*/
     #medio{
         width: 100%;
-        height: 56%;
+        height: fit-content;
         background-color:darkslategrey ;
        
     }
@@ -107,6 +107,7 @@
     }
     .cajaNegra{
         margin-top: 2em;
+        margin-bottom: 2em;
         background-color: black;
         width: 13em;
         height: 13em;
