@@ -1,4 +1,3 @@
-
 @media  screen and (min-width:1200px) {
     
     body{
@@ -24,7 +23,6 @@
     /*//////////////////////////////*/
     /*<!--Imagen y opciones de texto-->*/
     #cabecera{
-        /*Intentar grid*/
        display: grid;
        grid-template-columns: 1fr 4fr;
        grid-template-rows: 1fr;
@@ -33,7 +31,7 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
-        gap: 1em;
+        gap: 0.6em;
         font-size: 20px;
     }
     #cabecera img{
@@ -90,7 +88,7 @@
     /*<!--Parte del medio(cuadrado negro y dentro borde de cuadro naranja)-->*/
     #medio{
         width: 100%;
-        height: 70%;
+        height: 66%;
         background-color:darkslategrey ;
        
     }
