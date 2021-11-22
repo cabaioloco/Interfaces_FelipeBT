@@ -86,7 +86,7 @@ grid-column: 1/3;
   /*<!--Parte del medio(cuadrado negro y dentro borde de cuadro naranja)-->*/
         #medio{
             width: 100%;
-            height: 80%;
+            height: fit-content;
             background-color:darkslategrey ;
         }
         #medio > div {
