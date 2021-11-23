@@ -97,6 +97,7 @@ grid-column: 1/3;
             align-items: center;
             justify-items: center;
             margin-top: 5em;
+            padding-bottom: 2em;
         }
     
         #medio > span{
