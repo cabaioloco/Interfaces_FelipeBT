@@ -1,0 +1,508 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+/*<!--CabeceraNaranja-->*/
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: orange;
+    height: 10%;
+    color: white;
+}
+/*//////////////////////////////*/
+/* <!--Imagen y opciones de texto-->*/
+#cabecera img{
+   display: none;
+}
+#cabecera #caja1{
+display: grid;
+padding: 0.5em;
+grid-template: 1fr 1fr /1fr 1fr;
+margin-bottom: 2em;
+}
+#cabecera #caja1 :nth-child(5){
+grid-column: 1/3;
+}
+#caja1 div{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+/*<!--//////////////////////////////////////////////////-->*/
+/* <!--Titular grande-->*/
+#BTC{
+display: none;
+}
+#btc2 {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+/*<!--//////////////////////////////////////////////////-->*/
+
+/*<!--Tres botones naranjas-->*/
+#info {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    gap: 0.625em;
+}
+.botonNaranja{
+    margin-top: 0.625em;
+    margin-bottom: 0.625em;
+    background-color: orange;
+    width: 18.75em;
+    height: 3.125em;
+    color: white;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+/*//////////////////////////////*/
+
+/*<!--circulo Negro + Que es-->*/
+#QueEs{
+    height: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#negro{
+    background-color: black;
+    width: 3.125em;
+    height: 3.125em;
+    border-radius: 1.563em;
+    margin-right: 0.625em;
+}
+/*//////////////////////////////*/
+
+/*<!--Parte del medio(cuadrado negro y dentro borde de cuadro naranja)-->*/
+    #medio{
+        width: 100%;
+        height: fit-content;
+        background-color:darkslategrey ;
+    }
+    #medio > div {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        gap: 0.6em;
+        align-items: center;
+        justify-items: center;
+        margin-top: 5em;
+        padding-bottom: 2em;
+    }
+
+    #medio > span{
+        padding-top: 1em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+    .cajaNegra{
+        width: 80%;
+        height: 5em;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-items: center;
+        background-color: black;
+        color: white;
+
+    }
+    .cuadro{
+        margin-top: 0.4em;
+        display: flex;
+        border: 2px solid orange;
+        height: 2em;
+        width: 2em;
+    }
+    
+/*//////////////////////////////*/
+/*<!--Parrafo lorem ipsum + Imagen BreakTheChain-->*/
+#parrafo{
+width: 100%;
+height:40em;
+display: flex;
+flex-direction: column;
+}
+#parrafo div{
+margin-top: 1em;
+width: 90%;
+
+}
+#texto span{
+letter-spacing: 2em;
+}
+#texto{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+#texto:nth-child(1){
+width:  100%;
+text-align:justify;
+height: 100%;
+}
+#imagen{
+display: flex;
+justify-content: center;
+align-items: center; 
+}
+#imagen div{
+ background-image: url("img/Captura.PNG");
+ background-repeat: no-repeat;
+ background-size: contain;
+ width: 12em;
+ height: 10em;
+
+ 
+}
+
+/*<!--lista con Boton Apoyanos-->*/
+#abajo{
+width: 100%;
+height: 40%;
+background-color: darkslategrey;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+#caja{
+display: grid;
+list-style-type: none;
+width:89%;
+height: 11em;
+grid-template: 1fr 1fr 1fr/1fr 1fr ;
+}
+#caja ul{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+}
+
+ul :nth-child(1){
+color: white;
+}
+ul li{
+
+list-style: none;
+color: grey;
+}
+
+.boton{
+background-color: darkslategrey;
+width: 18.75em;
+height: 3.125em;
+color: white;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+#centrado{
+display: flex;
+justify-content: center;
+align-items: center;
+margin-bottom: 1.563em;
+}
+/*//////////////////////////////*/
+
+
+/*<!--Copyright al final de la pagina-->*/
+#copyright{
+background-color: black;
+color: grey;
+display: flex;
+align-items: center;
+height: 10%;
+width: 100%;
+}
+#copyright div{
+padding-left: 1.25em;
+}
+/*//////////////////////////////*/
+
+/*//////////////////////////////*/
+@media  screen and (min-width:768px){
+    .movil{
+        display: none;
+    }
+        /*<!--Imagen y opciones de texto-->*/
+        #cabecera{
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            margin: 1em;
+        }
+        #cabecera #caja1{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 0.6em;
+            font-size: 20px;
+        }
+        #cabecera img{
+           display: none;
+        }
+        /*//////////////////////////////*/
+        /*<!--Titular grande-->*/
+        #BTC {
+            display: grid;
+            grid-template-columns: 60%;
+            grid-template-rows: 1fr;
+            justify-content: center;
+            font-size: 2em;
+         }
+    
+        /*//////////////////////////////*/
+        /*<!--Tres botones naranjas-->*/
+        #info {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+            justify-items: center;
+            gap: 0.625em;
+        }
+        .botonNaranja{
+            width: 15em;
+            height: 3em;
+        }
+        /*//////////////////////////////*/
+        /*<!--Parte del medio(cuadrado negro y dentro borde de cuadro naranja)-->*/
+    
+        
+        #medio > div{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+            align-items: center;
+            justify-items: center;
+            margin-top: 1em;
+            gap: 0.625em;
+        }
+        .cajaNegra{
+            margin-top: 2em;
+            margin-bottom: 2em;
+            background-color: black;
+            width: 13em;
+            height: 13em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            flex-direction: column;
+            gap: 0.625em;
+        }
+        .cuadro{
+            border: 2px solid orange;
+            width: 6em;
+            height: 6em;
+        }
+        .letraGrande{
+            font-size: 1.5em;
+        }
+        /*//////////////////////////////*/
+        /*<!--Parrafo lorem ipsum + Imagen BreakTheChain-->*/
+        #parrafo{
+            width: 100%;
+            height:30em;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-template-rows: 1fr;
+            justify-items: center;
+            align-items: center;
+        }
+        #parrafo div{
+          width: 12em;
+          height: 100%;
+        }
+        #texto span{
+            letter-spacing: 3.531em;
+        }
+        #texto div{
+            word-spacing: 0.625em;
+            width: 31.25em;
+            text-align:justify;
+            height: 18.75em;
+        }
+        #imagen div{
+            background-image: url("img/Captura.PNG");
+            background-repeat: no-repeat;
+            background-position-x: center;
+            background-position-y: center;
+            background-size: contain;
+        
+            
+        }
+        /*//////////////////////////////*/
+        /*<!--lista con Boton Apoyanos-->*/
+        #abajo{
+            width: 100%;
+            height: 30%;
+            background-color: darkslategrey;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #abajo #caja{
+            width: 50%;
+            height: 3.75em;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+            align-items: center;
+            justify-items: center; 
+               }
+        #caja ul {
+            gap: 0.625em; 
+        }
+    
+        /*//////////////////////////////*/
+    } 
+
+@media screen and (min-width:1200px) {
+     /*<!--Imagen y opciones de texto-->*/
+  
+     #cabecera{
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        grid-template-rows: 1fr;
+     }
+     #cabecera #caja1{
+         display: flex;
+         justify-content: space-around;
+         align-items: center;
+         gap: 0.6em;
+         font-size: 20px;
+     }
+     #cabecera img{
+         display:inline;
+         margin-left: 1.25em;
+         margin-top: 1.25em;
+     }
+     /*//////////////////////////////*/
+         /*<!--Titular grande-->*/
+
+    #BTC {
+        display: grid;
+        grid-template-columns: 60%;
+        grid-template-rows: 1fr;
+        justify-content: center;
+        font-size: 2em;
+     }
+    /*//////////////////////////////*/
+     /*<!--Tres botones naranjas-->*/
+     #info {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        justify-items: center;
+        gap: 0.625em;
+    }
+    /*//////////////////////////////*/
+    /*<!--Parte del medio(cuadrado negro y dentro borde de cuadro naranja)-->*/
+ 
+    #medio > div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 4em;
+        margin-bottom: 2em;
+        gap: 2em;
+    }
+    .cajaNegra{
+        background-color: black;
+        width: 20rem;
+        height: 18rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        flex-direction: column;
+        gap: 0.625rem;
+    }
+    .cuadro{
+        border: 2px solid orange;
+        width: 9.375em;
+        height: 9.375em;
+    }
+    .letraGrande{
+        font-size: 40px;
+    }
+    /*//////////////////////////////*/
+    /*<!--Parrafo lorem ipsum + Imagen BreakTheChain-->*/
+    #parrafo{
+        width: 100%;
+        height:30em;
+        display: flex;
+        flex-direction: row;
+    }
+    #parrafo div{
+      width: 50%;
+      height: 100%;
+    }
+    #texto span{
+        letter-spacing: 3.531em;
+    }
+    #texto div{
+        word-spacing: 0.625em;
+        width: 31.25em;
+        text-align:justify;
+        height: 18.75em;
+    }
+    #imagen{
+       display: flex;
+       justify-content: center;
+       align-items: flex-end; 
+    }
+    #imagen div{
+        background-image: url("img/Captura.PNG");
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: center;
+        background-size: contain;
+        width: 31.25em;
+        height: 20.625em;
+    
+        
+    }
+    /*//////////////////////////////*/
+    /*<!--lista con Boton Apoyanos-->*/
+    #abajo{
+        display: flex;
+        flex-direction: row;
+        gap: 12.5em;
+    }
+    #abajo #caja{
+        width: 50%;
+        height: 3.75em;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-top: 3.75em;
+    
+    }
+    #caja ul {
+        display: flex;
+        flex-direction: column;
+        gap: 0.625em;
+    }
+    #centrado{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1.563em;
+    }
+    /*//////////////////////////////*/
+}
+
