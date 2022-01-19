@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 2px solid black;
+            width: 900px;
+            height: 700px;
+        }
+        img{
+            width: 100px;
+            position: relative;
+            animation:mover 6s infinite;
+
+        }
+        @keyframes mover{
+            0%{
+                left: 0;
+                top: 50%;
+            }
+            25%{
+                left:50%;
+                top: 0;
+            }
+            50%{
+                left:89%;
+                top:50%;
+            }
+            75%{
+                left: 50%;
+                top:94%;
+            }
+            100%{
+                left: 0;
+                top: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="img/dvd.png" alt="dvd">
+    </div>
+</body>
+</html>
