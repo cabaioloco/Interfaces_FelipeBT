@@ -5,20 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body{
+            display: flex;
+           justify-content: right;
+        }
         div{
-            animation:rotacion 5s infinite;
-
+            width: fit-content;
+            animation:rotacion 4s 1;
+            animation-delay: 2s;
+            
+            animation-fill-mode: forwards;
         }
         @keyframes rotacion{
-            0%{
-                
-            }
-            50%{
-
-            }
-            100%{
-
-            }
+            0% {transform: translateX(0) rotate(0);}				
+		    100% {transform: translateX(-1780px) rotate(360deg);}
         }
     </style>
 </head>
@@ -26,5 +26,6 @@
     <div>
         <h1>Rotando</h1>
     </div>
+        
 </body>
 </html>
