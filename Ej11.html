@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cuadrado{
+            background-color: red;
+            width: 200px;
+            height: 200px;
+            margin-top: 10px;
+            transition: all 4s;
+        }
+        .cuadrado:hover{
+            transform: rotate(270deg);
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            color: yellow;
+            font-size: 1.5em;
+        }
+    </style>
+    <script type="text/javascript">
+        function move (){
+        document.querySelector(".cuadrado").style.width =style.width/2;
+        document.querySelector(".cuadrado").style.width =style.height/2;
+        document.querySelector(".cuadrado").style.font = font*1.5;
+        document.querySelector(".cuadrado").style.color =style.color.yellow;
+        document.querySelector(".cuadrado").style.transform =style.transform.rotate(270);
+    }
+    </script>
+</head>
+<body>
+            <div class="cuadrado">Caja1</div>
+            <div class="cuadrado">caja2</div>
+            <div class="cuadrado">Caja3</div>
+            <div class="cuadrado">Caja4</div>
+    <button onclick="move()">click aqui </button>
+</body>
+</html>
