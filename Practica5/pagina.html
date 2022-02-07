@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!--3.1.2 Language of Parts (Level AA)(Poner etiqueta html lang)-->
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -7,6 +8,7 @@
     <title>Document</title>
 </head>
 <body>
+    <!--Para mejorar la accesibilidad es imprescindible señalizar la cabecer y dentro poner un h1 para señalizar la arquitectura-->
     <header><h1>FiloEntertainment</h1></header>
        <!--1.1.1 Non-text Content (Level A);Solucion: poner alt en las imagenes-->
     <picture >
@@ -33,9 +35,10 @@
     </picture>
     
     <div id="botones">
+         <!--G125: Proporcionar enlaces para navegar por páginas web relacionadas;Solucion:poner un link al principio que te lleva a la principal fuente de informaion de la pagina-->
         <div class="boton">Torneos</div>
         <div class="boton">Normativa</div>
-        <div class="boton"> ¿Quienes somos?</div>
+        <a  href ="#medio" class="boton"> ¿Quienes somos?</a>
         <!--1.1.1 Non-text Content (Level A);Solucion: poner alt en las imagenes-->
         <img class="flecha" src="IMG/Flecha-Azul-1.png" alt="Una Flecha Azul que se mueve señalando"/>
         <img class="flecha" src="IMG/Flecha-Azul-1.png" alt="Una Flecha Azul que se mueve señalando"/>
@@ -56,10 +59,14 @@
 </div>
 
   <div id="medio">
+     
         <div class="caja">¿Quienes Somos?<p>Somos una empresa que debido a la reciente pandemia hemos decico crear cursos gratuitos de informatica para que no pierdas el tiempo</p></div>
-        <div class="caja">Desarrolladores</div>
-        <div class="caja">Desarrolladores</div>
-        <div class="caja">Desarrolladores</div>
+        <div class="caja">Desarrolladores
+        </div>
+        <div class="caja">Desarrolladores
+        </div>
+        <div class="caja">Desarrolladores
+        </div>
     </div>
 
     <!--He puesto el audio sticky para que puedas pararlo en cualquier moemnto navegando desde la pagina-->
@@ -68,5 +75,6 @@
         <source src="audio/Música-de-Ascensor.ogg" type="audio/ogg">
     </audio>
     <footer>@All copyright reserved <div id="barra"></div></footer>
+    <!--Importante poner el footer tambien-->
 </body>
 </html>
