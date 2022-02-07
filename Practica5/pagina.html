@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,33 +8,38 @@
 </head>
 <body>
     <header><h1>FiloEntertainment</h1></header>
-      
-    <picture>
+       <!--1.1.1 Non-text Content (Level A);Solucion: poner alt en las imagenes-->
+    <picture >
         <!--Tengo dos formatos uno webp y otro jp que son diferentes entre ellos  con los puntos de rutura 0px,800px,1200px
         En caso de que se use el dpr 2 se vera en todas las resoluciones una uimagen que pone hola(la imagen que pone hola es diferente entre puntos de rotura)
         -->
-        <source media="(min-width:1200px) "  srcset="img/gente.Webp 1x , img/hola.webp 2x"  
-        type="image/Webp">
         <source media="(min-width:1200px) "   srcset="img/gente.jpg 1x, img/hola.jpg 2x" 
-        type="image/jpeg">
-        <source  media="(min-width:600px) " srcset="img/gente-md.Webp 200w, img/gente-md-grande.Webp 1000w  " 
-        sizes="(min-width:1000px) 100vw,20vw"
-        type="image/Webp">
+        type="image/jpeg" alt="una imagen de gente trabajando">
+
+        <source media="(min-width:1200px) "  srcset="img/gente.Webp 1x , img/hola.webp 2x"  
+        type="image/Webp" alt="una imagen de gente trabajando">
+
         <source  media="(min-width:600px) "  srcset="img/gente-md.jpg 200w , img/gente-md-grande.jpg 1000w "
         sizes="(min-width:1000px) 100vw,20vw"
-        type="image/jpeg">
+        type="image/jpeg" alt="una imagen de gente trabajando">
+
+        <source  media="(min-width:600px) " srcset="img/gente-md.Webp 200w, img/gente-md-grande.Webp 1000w  " 
+        sizes="(min-width:1000px) 100vw,20vw"
+        type="image/Webp" alt="una imagen de gente trabajando">
+
         <source   srcset="img/gente-sm.Webp" 
-        type="image/Webp">
-        <img src="img/gente-sm.jpg">
+        type="image/Webp" alt="una imagen de gente trabajando">
+        <img src="img/gente-sm.jpg" alt="una imagen de gente trabajando">
     </picture>
     
     <div id="botones">
         <div class="boton">Torneos</div>
         <div class="boton">Normativa</div>
         <div class="boton"> ¿Quienes somos?</div>
-        <img class="flecha" src="IMG/Flecha-Azul-1.png"/>
-        <img class="flecha" src="IMG/Flecha-Azul-1.png"/>
-        <img class="flecha" src="IMG/Flecha-Azul-1.png"/>
+        <!--1.1.1 Non-text Content (Level A);Solucion: poner alt en las imagenes-->
+        <img class="flecha" src="IMG/Flecha-Azul-1.png" alt="Una Flecha Azul que se mueve señalando"/>
+        <img class="flecha" src="IMG/Flecha-Azul-1.png" alt="Una Flecha Azul que se mueve señalando"/>
+        <img class="flecha" src="IMG/Flecha-Azul-1.png" alt="Una Flecha Azul que se mueve señalando"/>
     </div>
     <div id="imagen">
         <picture>
