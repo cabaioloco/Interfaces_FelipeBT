@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header><h1>FiloEntertainment</h1></header>
+      
+    <picture>
+        <!--Tengo dos formatos uno webp y otro jp que son diferentes entre ellos  con los puntos de rutura 0px,800px,1200px
+        En caso de que se use el dpr 2 se vera en todas las resoluciones una uimagen que pone hola(la imagen que pone hola es diferente entre puntos de rotura)
+        -->
+        <source media="(min-width:1200px) "  srcset="img/gente.Webp 1x , img/hola.webp 2x"  
+        type="image/Webp">
+        <source media="(min-width:1200px) "   srcset="img/gente.jpg 1x, img/hola.jpg 2x" 
+        type="image/jpeg">
+        <source  media="(min-width:600px) " srcset="img/gente-md.Webp 200w, img/gente-md-grande.Webp 1000w  " 
+        sizes="(min-width:1000px) 100vw,20vw"
+        type="image/Webp">
+        <source  media="(min-width:600px) "  srcset="img/gente-md.jpg 200w , img/gente-md-grande.jpg 1000w "
+        sizes="(min-width:1000px) 100vw,20vw"
+        type="image/jpeg">
+        <source   srcset="img/gente-sm.Webp" 
+        type="image/Webp">
+        <img src="img/gente-sm.jpg">
+    </picture>
+    
+    <div id="botones">
+        <div class="boton">Torneos</div>
+        <div class="boton">Normativa</div>
+        <div class="boton"> ¿Quienes somos?</div>
+        <img class="flecha" src="IMG/Flecha-Azul-1.png"/>
+        <img class="flecha" src="IMG/Flecha-Azul-1.png"/>
+        <img class="flecha" src="IMG/Flecha-Azul-1.png"/>
+    </div>
+    <div id="imagen">
+        <picture>
+            
+        </picture>
+    </div>
+    <div id="videos">
+        <video width="560" height="315" controls loop>
+            <source src="video/ogv.ogv" type="video/ogg">
+            <source src="video/Visual Studio Code 2022   Web Dev Setup   Top Extensions, Themes, Settings, Tips u0026 Trick.mp4" type="video/mp4">
+        </video>
+    
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/fS0P9R9_NPM?controls=2&loop=1&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer;  autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+  <div id="medio">
+        <div class="caja">¿Quienes Somos?<p>Somos una empresa que debido a la reciente pandemia hemos decico crear cursos gratuitos de informatica para que no pierdas el tiempo</p></div>
+        <div class="caja">Desarrolladores</div>
+        <div class="caja">Desarrolladores</div>
+        <div class="caja">Desarrolladores</div>
+    </div>
+
+    <!--He puesto el audio sticky para que puedas pararlo en cualquier moemnto navegando desde la pagina-->
+    <audio  controls autoplay muted >
+        <source src="audio/Música de Ascensor.mp3" type="audio/mp3">
+        <source src="audio/Música-de-Ascensor.ogg" type="audio/ogg">
+    </audio>
+    <footer>@All copyright reserved <div id="barra"></div></footer>
+</body>
+</html>
