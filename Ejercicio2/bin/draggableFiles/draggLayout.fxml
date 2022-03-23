@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane minHeight="400.0" minWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text fx:id="source" layoutX="112.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Source String" />
+      <Text fx:id="destination" layoutX="394.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Destination" />
+      <AnchorPane layoutX="156.0" layoutY="108.0" prefHeight="268.0" prefWidth="268.0" style="-fx-border-color: black;">
+         <children>
+            <Text layoutX="100.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Arrastra una imagen del explorador" wrappingWidth="68.138671875" />
+            <ImageView fx:id="imagen" fitHeight="268.0" fitWidth="268.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
