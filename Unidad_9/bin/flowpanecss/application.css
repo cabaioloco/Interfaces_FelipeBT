@@ -1,0 +1,20 @@
+
+#boton1{
+	-fx-pref-height: 70px;
+	-fx-pref-width: 80px;
+}
+#boton2{
+	-fx-border-width: 0;
+	-fx-background-radius: 0 0 0 0;
+		-fx-pref-height: 1px;
+	-fx-pref-width: 47px;
+	-fx-padding: 0;
+	-fx-border-color: none;
+}
+#pane{
+	-fx-alignment: center;
+	-fx-orientation: horizontal;
+	-fx-vgap: 20px;
+	-fx-hgap: 13px;
+	-fx-row-valignment: bottom;
+}

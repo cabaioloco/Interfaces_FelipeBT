@@ -1,0 +1,32 @@
+#cabecera{
+	-fx-background-color: #008080;
+	-fx-pref-height: 50px;
+	-fx-alignment: center ;
+}
+#titulo{
+	-fx-background-color: #6b6bff;
+	-fx-border-radius: 10 10 10 10;
+	-fx-border-radius: 5px ;
+	-fx-min-height: 20px;
+	-fx-min-width: 500px;
+	-fx-alignment: center;
+
+}
+#titulo Text{
+	-fx-fill: white;
+}
+#footer{
+	-fx-alignment:center;
+	-fx-border-color: lightgrey;
+	-fx-border-width: 2;
+}
+#imagen{
+	-fx-image: url("/img/javafx_account_example.jpg");
+	-fx-pref-height: 20px;
+	-fx-pref-width: 20px;	
+	
+}
+#main{
+	-fx-border-color: lightgrey;
+	-fx-border-width: 2;
+}
