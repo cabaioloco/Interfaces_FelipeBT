@@ -1,15 +1,21 @@
 #cabecera{
 	-fx-background-color: #008080;
 	-fx-pref-height: 50px;
-	-fx-alignment: center ;
+	-fx-alignment: center;
+}
+#centrar{
+	-fx-alignment: center;
 }
 #titulo{
 	-fx-background-color: #6b6bff;
-	-fx-border-radius: 10 10 10 10;
-	-fx-border-radius: 5px ;
-	-fx-min-height: 20px;
-	-fx-min-width: 500px;
-	-fx-alignment: center;
+  	-fx-background-size: 800 900;
+    -fx-background-radius: 10 10 10 10;
+    -fx-border-radius: 10 10 10 10;
+    -fx-border-width:5;
+	-fx-pref-height: 5px;
+	-fx-alignment: center_left;
+	-fx-spacing: 280px;
+	-fx-padding: 10px;
 
 }
 #titulo Text{
@@ -29,4 +35,16 @@
 #main{
 	-fx-border-color: lightgrey;
 	-fx-border-width: 2;
+}
+#columna HBox{
+	-fx-pref-height: 30px;
+	-fx-border-color: lightgrey;
+	-fx-border-width: 2;
+}
+#contentHeader{
+-fx-font-weight: bold;
+}
+#account {
+	-fx-alignment: center_right;
+	-fx-spacing:10;
 }
