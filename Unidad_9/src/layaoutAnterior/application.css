@@ -1,0 +1,23 @@
+#colIzq{
+	-fx-border-insets: 10, 20;
+	-fx-border-width: 2; 
+	-fx-border-color: green, red;
+	-fx-image: url("/img/arrow_t_up_right.png");
+	
+}
+#colIzq Hyperlink{
+	-fx-text-fill: red;
+}
+#colIzq Hyperlink:hover{
+	-fx-text-fill: green;
+}
+#footer{
+	
+}
+#contenedor{
+	-fx-background-color: lightgreen;
+}
+#centro{
+	-fx-background-color: red;
+	-fx-border-radius:10 0 10 0;
+}
