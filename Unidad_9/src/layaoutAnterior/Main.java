@@ -19,6 +19,7 @@ public class Main extends Application {
 			rootLayout = (BorderPane) loader.load();
 			// Mostramos la escena del BorderPane de la variable rootLayot
 			Scene scene = new Scene(rootLayout);
+			scene.getStylesheets().add("layaoutAnterior/application.css");
 			primaryStage.setScene(scene);
 			primaryStage.show();
 		} catch (Exception e) {

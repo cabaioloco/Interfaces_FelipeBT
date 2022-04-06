@@ -2,8 +2,9 @@
 	-fx-border-insets: 10, 20;
 	-fx-border-width: 2; 
 	-fx-border-color: green, red;
-	-fx-image: url("/img/arrow_t_up_right.png");
-	
+	-fx-background-image:  url("/img/arrow_t_up_right.png");
+	-fx-background-size: contain;
+	-fx-background-repeat: no-repeat;	
 }
 #colIzq Hyperlink{
 	-fx-text-fill: red;
@@ -12,12 +13,48 @@
 	-fx-text-fill: green;
 }
 #footer{
-	
+	-fx-background-color: linear-gradient(to right,red,green);
 }
 #contenedor{
 	-fx-background-color: lightgreen;
 }
 #centro{
-	-fx-background-color: red;
-	-fx-border-radius:10 0 10 0;
+	-fx-background-color: lightblue;
+	-fx-background-radius: 10 10 10 10;
+}
+.checkbox:selected{
+	-fx-border-width: 2;
+	-fx-border-color: red;
+}
+TitledPane:expanded{
+	-fx-font-style: italic;
+}
+#imagen1{
+	-fx-image: url("/img/img1.PNG");
+			-fx-rotate: 45deg;
+
+}
+#imagen2{
+	-fx-image: url("/img/img2.PNG");
+			-fx-rotate: 45deg;
+}
+#imagen3{
+	-fx-image: url("/img/img3.PNG");
+			-fx-rotate: 45deg;
+}
+#imagen4{
+	-fx-image: url("/img/img4.PNG");
+			-fx-rotate: 45deg;
+}
+TreeView {
+	-fx-font-weight:bold;
+}
+TreeView{
+	-fx-font-style:italic;
+}
+.list-cell:odd:focused {
+-fx-background-color: red;
+}
+.list-cell:focused {
+-fx-background-color: blue;
 }

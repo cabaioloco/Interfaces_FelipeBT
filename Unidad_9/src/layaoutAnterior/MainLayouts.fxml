@@ -149,7 +149,7 @@
             <DatePicker prefHeight="25.0" prefWidth="196.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
             <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
                <children>
-                  <RadioButton maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Male" HBox.hgrow="ALWAYS">
+                  <RadioButton maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="checkbox" text="Male" HBox.hgrow="ALWAYS">
                      <HBox.margin>
                         <Insets right="20.0" />
                      </HBox.margin>
@@ -157,17 +157,17 @@
                         <ToggleGroup fx:id="genero" />
                      </toggleGroup>
                   </RadioButton>
-                  <RadioButton alignment="TOP_LEFT" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Female" toggleGroup="$genero" HBox.hgrow="ALWAYS" />
+                  <RadioButton alignment="TOP_LEFT" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="checkbox" text="Female" toggleGroup="$genero" HBox.hgrow="ALWAYS" />
                </children>
             </HBox>
             <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
                <children>
-                  <CheckBox maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Java" HBox.hgrow="ALWAYS">
+                  <CheckBox fx:id="java" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="checkbox" text="Java" HBox.hgrow="ALWAYS">
                      <HBox.margin>
                         <Insets right="20.0" />
                      </HBox.margin>
                   </CheckBox>
-                  <CheckBox alignment="TOP_LEFT" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Electron" HBox.hgrow="ALWAYS">
+                  <CheckBox alignment="TOP_LEFT" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="checkbox" text="Electron" HBox.hgrow="ALWAYS">
                      <HBox.margin>
                         <Insets />
                      </HBox.margin>
@@ -202,7 +202,7 @@
                   <content>
                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                            <children>
-                              <ImageView fitHeight="71.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fx:id="imagen1" fitHeight="71.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
                                     <Image url="@../../img/Img1.PNG" />
                                  </image>
@@ -215,7 +215,7 @@
                   <content>
                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                            <children>
-                              <ImageView fitHeight="71.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fx:id="imagen2" fitHeight="71.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
                                     <Image url="@../../img/Img2.PNG" />
                                  </image>
@@ -228,7 +228,7 @@
                   <content>
                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                            <children>
-                              <ImageView fitHeight="71.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fx:id="imagen3" fitHeight="71.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
                                     <Image url="@../../img/Img3.PNG" />
                                  </image>
@@ -241,7 +241,7 @@
                      <content>
                         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                            <children>
-                              <ImageView fitHeight="69.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fx:id="imagen4" fitHeight="69.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
                                     <Image url="@../../img/Img4.PNG" />
                                  </image>
