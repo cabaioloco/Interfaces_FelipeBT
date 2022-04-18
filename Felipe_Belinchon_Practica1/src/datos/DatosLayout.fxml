@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="400.0" minWidth="600.0" prefHeight="466.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="datos.DatosController">
+   <children>
+      <TableView fx:id="table1" editable="true" prefHeight="210.0" prefWidth="600.0" tableMenuButtonVisible="true">
+        <columns>
+          <TableColumn fx:id="firstNameCol" prefWidth="78.0" text="Nombre" />
+          <TableColumn fx:id="lastNameCol" prefWidth="94.0" text="Apellido" />
+            <TableColumn fx:id="ageColumn" prefWidth="83.0" text="Edad" />
+            <TableColumn fx:id="sueldoColumn" prefWidth="75.0" text="Sueldo" />
+            <TableColumn fx:id="generoColumn" prefWidth="78.0" text="genero" />
+            <TableColumn fx:id="lenguajeColumn" prefWidth="59.0" text="Idioma" />
+            <TableColumn fx:id="emailCol" prefWidth="207.0" text="email" />
+        </columns>
+      </TableView>
+      <TreeView fx:id="tree1" layoutX="14.0" layoutY="221.0" prefHeight="160.0" />
+      <FlowPane alignment="CENTER" columnHalignment="CENTER" hgap="25.0" layoutX="290.0" layoutY="292.0" prefHeight="160.0" prefWidth="283.0" rowValignment="BOTTOM" vgap="10.0">
+         <children>
+            <Button fx:id="mostrar" mnemonicParsing="false" onAction="#ventana" text="Mostrar Informacion" />
+            <Button fx:id="editar" mnemonicParsing="false" onAction="#editar" text="editar" />
+            <Button fx:id="borrar" mnemonicParsing="false" onAction="#borrar" text="Borrar" />
+            <Text fx:id="cambio" strokeType="OUTSIDE" strokeWidth="0.0" />
+         </children>
+      </FlowPane>
+      <Button fx:id="crearDepart" layoutX="14.0" layoutY="410.0" mnemonicParsing="false" onAction="#crearDepartamento" text="Crear departamento" />
+      <Button fx:id="borrarDepart" layoutX="170.0" layoutY="410.0" mnemonicParsing="false" onAction="#borrarDepartamento" text="borrar" />
+      <VBox fx:id="tuto" layoutX="273.0" layoutY="216.0" prefHeight="35.0" prefWidth="35.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="?" wrappingWidth="8.37890625" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

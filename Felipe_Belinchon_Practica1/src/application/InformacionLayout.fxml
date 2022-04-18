@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="600.0" minWidth="550.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text layoutX="41.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Esta aplicacion es una aplicacion sencilla de recursos humanos en la que tendremos la pestaña Datos,que enseñara los datos de los empleados y realizar acciones(depsdir,ascender,Mantener)" wrappingWidth="438.515625" />
+      <Text layoutX="38.0" layoutY="313.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ademas tendremos una pestaña formulario en la que poderemos añadi,modificar o eliminar datos de la BBDD:" wrappingWidth="445.0859375" />
+      <TilePane alignment="CENTER_LEFT" hgap="40.0" layoutX="31.0" layoutY="74.0" prefColumns="2" prefHeight="205.0" prefRows="1" prefWidth="459.0" tileAlignment="CENTER_LEFT">
+         <children>
+            <ImageView fitHeight="64.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/Formulario.PNG" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/FormularioEjem.PNG" />
+               </image>
+            </ImageView>
+         </children></TilePane>
+      <TilePane alignment="CENTER_LEFT" hgap="40.0" layoutX="31.0" layoutY="332.0" prefColumns="2" prefHeight="140.0" prefRows="1" prefWidth="459.0">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/Datos.PNG" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" TilePane.alignment="CENTER">
+               <image>
+                  <Image url="@../img/datosEjemplo.PNG" />
+               </image>
+            </ImageView>
+         </children></TilePane>
+      <Text layoutX="8.0" layoutY="482.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Todas las ventanas tienen la opcion &quot;open&quot; para abrir la ventana y la opcion &quot;close&quot; para cerrarla." wrappingWidth="504.650390625" />
+   </children>
+</AnchorPane>
