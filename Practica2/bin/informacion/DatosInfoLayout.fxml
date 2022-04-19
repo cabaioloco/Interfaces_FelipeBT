@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Pagination?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="informacion.DatosInfoController">
+   <children>
+      <Text layoutX="10.0" layoutY="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Funcionamiento de La pestaña Datos" />
+      <Pagination fx:id="pag" layoutX="20.0" layoutY="20.0" prefHeight="347.0" prefWidth="564.0" />
+      <ProgressBar fx:id="bar" layoutX="20.0" layoutY="377.0" prefHeight="18.0" prefWidth="564.0" progress="0.0" />
+   </children>
+</AnchorPane>

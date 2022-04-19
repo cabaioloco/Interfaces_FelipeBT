@@ -1,0 +1,51 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+Button{
+	-fx-background-color:skyblue;
+}
+TextField{
+		-fx-background-color:derive(skyblue,25%);
+		-fx-text-fill: black;
+}
+ChoiceBox{
+	-fx-background-color:derive(skyblue,25%);
+}
+
+#footer{
+	-fx-background-color: lightblue;
+	-fx-border-width: 1;
+	-fx-border-color:derive(blue,50%);
+	-fx-alignment: center;
+	
+}
+#columna{
+	-fx-background-color: lightblue;
+	-fx-border-color: derive(blue,50%);
+	-fx-border-width:1;
+}
+BorderPane{
+	-fx-background-color: derive(lightblue,25%);
+}
+Accordion TitledPane AnchorPane{
+	-fx-background-color: skyblue;
+}
+MenuBar{
+	-fx-background-color: lightblue;
+	-fx-border-width: 1;
+	-fx-border-color:derive(blue,50%);	
+}
+MenuItem {
+-fx-background-color: skyblue;
+}
+#tuto{
+	-fx-background-repeat: no-repeat;
+	-fx-background-color: skyblue;
+	-fx-border-width: 3;
+	-fx-border-color:derive(blue,50%);	
+	-fx-alignment: center;
+	-fx-font-size: 12;
+}
+#papelera{
+	-fx-background-image: url("/img/papelera.png");
+	-fx-background-repeat: no-repeat ;
+	-fx-background-size: contain;
+}
