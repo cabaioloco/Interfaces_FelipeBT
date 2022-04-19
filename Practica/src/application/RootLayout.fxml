@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="750.0" stylesheets="@../css/application.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MenuController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+         <menus>
+            <Menu mnemonicParsing="false" text="Datos">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#abrirDatos" text="Open" />
+                  <MenuItem mnemonicParsing="false" onAction="#cerrarInformacion" text="Close" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Formulario">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#abrirFormulario" text="Open" />
+                  <MenuItem mnemonicParsing="false" onAction="#cerrarInformacion" text="Close" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" onAction="#cerrarInformacion" text="Informacion">
+              <items>
+                  <Menu mnemonicParsing="false" text="Guia">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#abrirInfoGeneral" text="General" />
+                      <MenuItem mnemonicParsing="false" onAction="#abrirInfoDatos" text="Datos" />
+                        <MenuItem mnemonicParsing="false" onAction="#abrirInfoForm" text="Formulario" />
+                    </items>
+                  </Menu>
+                  <MenuItem mnemonicParsing="false" onAction="#cerrarInformacion" text="Close" />
+              </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+   </top>
+   <bottom>
+      <HBox fx:id="footer" alignment="CENTER_LEFT" prefHeight="62.0" prefWidth="600.0" stylesheets="@../css/application.css" BorderPane.alignment="CENTER">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="\@All copyRight reserved to FiloEntertainment" wrappingWidth="306.13671875" />
+         </children></HBox>
+   </bottom>
+   <center>
+      <VBox prefHeight="563.0" prefWidth="625.0" BorderPane.alignment="CENTER" />
+   </center>
+   <left>
+      <VBox id="columna" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="FiloEntertainment" />
+            <VBox prefHeight="543.0" prefWidth="98.0">
+               <children>
+                  <Accordion prefHeight="547.0" prefWidth="98.0">
+                    <panes>
+                      <TitledPane animated="false" text="Tareas">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                        </content>
+                      </TitledPane>
+                      <TitledPane animated="false" text="Objetivos">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                        </content>
+                      </TitledPane>
+                      <TitledPane animated="false" text="Contactos">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                        </content>
+                      </TitledPane>
+                    </panes>
+                  </Accordion>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </left>
+</BorderPane>
