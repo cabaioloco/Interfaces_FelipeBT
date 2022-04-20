@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane minHeight="400.0" minWidth="600.0" prefHeight="443.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text layoutX="22.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Esta aplicacion es una aplicacion de creacion,edicion y elminacion de empleados de una empresa.La aplicacion tiene tres pestañas &quot;Datos&quot; en la que veremos los datos de los empleados,&quot;Formulario&quot; en la que veremos un formulario de datos de un empleado y las pestañas de ayuda las cuales tienen sus propias subpestañas explicando la funcionalidad de cada ventana." wrappingWidth="512.958984375" />
+      <Text layoutX="22.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inofrmacion general de la aplicacion" />
+      <HBox fx:id="pregunta" layoutX="178.0" layoutY="172.0" prefHeight="163.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>
