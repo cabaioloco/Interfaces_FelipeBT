@@ -28,6 +28,7 @@ public class MenuController {
 
 	
 	private  static ObservableList<Persona> data = FXCollections.observableArrayList(
+    	    new Persona("Felipe", "Belinchon", "Felipe@example.com", 20,"Masculino","Español",3000,"hey"),
     	    new Persona("Felipe", "Belinchon", "Felipe@example.com", 20,"Masculino","Español",3000,"hey"));
 	
 	  @FXML

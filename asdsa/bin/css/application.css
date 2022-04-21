@@ -2,6 +2,12 @@
 Button{
 	-fx-background-color:skyblue;
 }
+Table:focused{
+		-fx-background-color:lightgreen;
+}
+TreeView{
+	-fx-background-color:skyblue;
+}
 TextField{
 		-fx-background-color:derive(skyblue,25%);
 		-fx-text-fill: black;
@@ -13,11 +19,17 @@ GridPane{
 	-fx-background-color: derive(lightblue,25%);
 }
 #footer{
-	-fx-background-color: lightblue;
 	-fx-border-width: 1;
 	-fx-border-color:derive(blue,50%);
-	-fx-alignment: center;
+	-fx-alignmnet:center;
+	-fx-background-color:linear-gradient(to right,derive(skyblue,25%),lightgreen);
 	
+}
+#cabecera{
+		-fx-border-width: 1;
+	-fx-border-color:derive(blue,50%);
+	-fx-alignmnet:center;
+	-fx-background-color:linear-gradient(to right,derive(skyblue,25%),lightgreen);
 }
 
 BorderPane{
@@ -26,14 +38,7 @@ BorderPane{
 Accordion TitledPane AnchorPane{
 	-fx-background-color: skyblue;
 }
-MenuBar{
-	-fx-background-color: lightblue;
-	-fx-border-width: 1;
-	-fx-border-color:derive(blue,50%);	
-}
-MenuItem {
--fx-background-color: skyblue;
-}
+
 #tuto{
 	-fx-background-repeat: no-repeat;
 	-fx-background-color: skyblue;

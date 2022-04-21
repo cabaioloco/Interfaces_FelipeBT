@@ -10,7 +10,9 @@
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="750.0" stylesheets="@../css/application.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MenuController">
    <top>
-      <MenuBar BorderPane.alignment="CENTER">
+   <HBox fx:id="cabecera" prefHeight="49.0" prefWidth="750.0">
+   <children>
+      <MenuBar prefHeight="30.0" prefWidth="223.0" BorderPane.alignment="CENTER">
          <menus>
             <Menu mnemonicParsing="false" text="Datos">
               <items>
@@ -38,11 +40,18 @@
             </Menu>
          </menus>
       </MenuBar>
+            <HBox fx:id="titulo" prefHeight="49.0" prefWidth="517.0" />
+      </children>
+      </HBox>
    </top>
    <bottom>
       <HBox fx:id="footer" alignment="CENTER_LEFT" prefHeight="62.0" prefWidth="600.0" stylesheets="@../css/application.css" BorderPane.alignment="CENTER">
          <children>
-            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="\@All copyRight reserved to FiloEntertainment" wrappingWidth="306.13671875" />
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Text fx:id="copy" strokeType="OUTSIDE" strokeWidth="0.0" text="\@All copyRight reserved to FiloEntertainment" textAlignment="CENTER" wrappingWidth="306.13671875" />
+               </children>
+            </HBox>
          </children></HBox>
    </bottom>
    <center>
